@@ -1,4 +1,4 @@
-# Learning Experience - Getting started with Duckiebot21
+# Learning Experience - Getting started with Duckiebot DB21
 
 ---
 
@@ -6,8 +6,8 @@
 
 Welcome to your very first Learning Experience!
 
-This readme will guide you through the essential components and incredible capabilities of the DuckieBot21 robot from Duckietown.
-The DuckieBot21 is a versatile educational robot that offers a hands-on adventure into robotics, autonomous driving, and artificial intelligence.
+This readme will guide you through the essential components and incredible capabilities of the Duckiebot DB21 robot from Duckietown.
+The Duckiebot DB21 is a versatile educational robot that offers a hands-on adventure into robotics, autonomous driving, and artificial intelligence.
 
 The robot comes equipped with an array of amazing sensors, capable actuators, a powerful and smart computing unit, and a robust power system, all of which work together to enable the robot to perform complex tasks such as navigation, obstacle avoidance, and path planning.
 
@@ -17,12 +17,12 @@ The robot comes equipped with an array of amazing sensors, capable actuators, a 
 
 ## Learning Outcomes
 
-The goal of this Learning Experience is to get started and understand your DuckieBot21 robot.
+The goal of this Learning Experience is to get started and understand your Duckiebot DB21 robot.
 By the end of this Learning Experience, you will be able to:
 
-1. Understand the breakdown of the DuckieBot21 robot into different sections.
+1. Understand the breakdown of the Duckiebot DB21 robot into different sections.
 2. Understand the purpose and functionality of each section.
-3. Be able to identify and locate the different components of the DuckieBot21 robot.
+3. Be able to identify and locate the different components of the Duckiebot DB21 robot.
 4. Understand the basic working principles of these components.
 5. Understand how these components work together to enable the robot to perform complex tasks.
 
@@ -30,7 +30,7 @@ By the end of this Learning Experience, you will be able to:
 
 ## Breakdown of Sections
 
-This LX is divided into several sections, each focusing on a different aspect of the DuckieBot21 robot to facilatate the better understanding of the purpose and functionality of each section.
+This LX is divided into several sections, each focusing on a different aspect of the Duckiebot DB21 robot to facilatate the better understanding of the purpose and functionality of each section.
 
 1. [Sensors](sensors.md)
 
