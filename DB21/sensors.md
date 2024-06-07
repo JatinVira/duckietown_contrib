@@ -34,7 +34,9 @@ The Duckiebot DB21 is equipped with a Waveshare Raspberry Pi Camera Module with 
 
 Picture:
 
-![alt text](images/camera.jpg){width=25, height=25}
+<div class="image_container">
+<img src="images/camera.jpg" alt="Camera Picture">
+</div>
 
 Functionality:
 
@@ -54,3 +56,16 @@ For instance, the Duckiebot DB21 can:
 - Use detected lines on the road to maintain a straight path or navigate curves.
 - Apply feature detection to recognize specific patterns or objects in its environment.
 - Build control points from the visual data to plot a course and adjust its movements accordingly.
+
+<style>
+.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_container img {
+    width: 25%;
+    height: 25%;
+}
+</style>

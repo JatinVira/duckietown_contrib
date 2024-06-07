@@ -11,7 +11,9 @@ The Duckiebot DB21 is a versatile educational robot that offers a hands-on adven
 
 The robot comes equipped with an array of amazing sensors, capable actuators, a powerful and smart computing unit, and a robust power system, all of which work together to enable the robot to perform complex tasks such as navigation, obstacle avoidance, and path planning.
 
-![alt text](images/DB21J4_turning.webp)
+<div align="center">
+<img src="images/DB21J4_turning.webp" alt="Rotating Duckiebot DB21">
+</div>
 
 ---
 
