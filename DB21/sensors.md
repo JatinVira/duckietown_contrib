@@ -2,7 +2,6 @@
 
 ---
 
-<!-- Insert a link to go back to Readme -->
 [Back to Index](README.md) | [Next: Actuators](actuators.md)
 
 ## Sensors - Introduction
@@ -26,19 +25,25 @@ Let's proceed to understand the various sensors equipped on the Duckiebot DB21 r
 
 ## Sensors on Duckiebot DB21
 
-### 1. Camera
+### Camera
 
-Description:
+#### Description
 
 The Duckiebot DB21 is equipped with a Waveshare Raspberry Pi Camera Module with a fish-eye lens, providing a wide 160-degree field of view. This high-quality camera is crucial for capturing detailed images of the robot's environment, which are then used for various computer vision tasks.
 
-Picture:
+#### Picture
 
-<div class="image_container">
+<div align="center">
 <img src="images/camera.jpg" alt="Camera Picture">
 </div>
 
-Functionality:
+#### Working Principle
+
+1. Gathering Light and focusing it on a Sensor:
+
+    Light from the environment reflects off objects and travels towards the camera. The lens focuses this incoming light to create a sharp image on the sensor plane.
+
+#### Functionality
 
 The camera captures images (frames) of the surrounding environment.
 These images are processed by the robot to understand its surroundings and make autonomous decisions.
@@ -48,7 +53,7 @@ The camera enables the Duckiebot DB21 to:
 - Identify and react to traffic signs and obstacles
 - Navigate complex environments using simultaneous localization and mapping (SLAM)
 
-Usage Example:
+#### Usage Example
 
 The continuous stream of images from the camera can be utilized for real-time navigation.
 For instance, the Duckiebot DB21 can:
@@ -57,15 +62,3 @@ For instance, the Duckiebot DB21 can:
 - Apply feature detection to recognize specific patterns or objects in its environment.
 - Build control points from the visual data to plot a course and adjust its movements accordingly.
 
-<style>
-.image_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image_container img {
-    width: 25%;
-    height: 25%;
-}
-</style>
