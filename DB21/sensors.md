@@ -88,3 +88,45 @@ For instance, the Duckiebot DB21 can:
 - Apply feature detection to recognize specific patterns or objects in its environment.
 - Build control points from the visual data to plot a course and adjust its movements accordingly.
 
+
+---
+
+### ToF (Time-of-Flight) Sensor
+
+#### Description
+
+The Duckiebot DB21 is equipped with a VL53L1X ToF sensor.
+The ToF sensor gives us a depth data of the environment, which is crucial for obstacle avoidance and navigation.
+
+#### Picture
+
+<div align="center">
+<img src="images/tof.jpg" alt="ToF Sensor Picture">
+</div>
+
+#### Working Principle
+
+A Time-of-Flight (ToF) sensor works by emitting a short burst of infrared light, invisible to the human eye. 
+This light pulse travels outwards and bounces off objects in the environment. 
+The sensor then measures the time it takes for the light pulse to travel to an object and reflect back. 
+Based on the speed of light and the measured time, the sensor calculates the distance to the object.
+
+#### Functionality
+
+The ToF sensor provides depth information about the environment.
+This information is used for obstacle avoidance, navigation, and mapping.
+The ToF sensor enables the Duckiebot DB21 to:
+
+- Detect obstacles in its path and avoid collisions
+- Measure distances to objects for safe navigation
+- Create a 3D map of the environment for localization and path planning
+- Assist in docking maneuvers and precise positioning
+
+#### Usage Example
+
+The ToF sensor can be used to detect obstacles in the robot's path.
+For instance, the Duckiebot DB21 can:
+
+- Stop or change its course when an obstacle is detected within a certain range.
+- Calculate the distance to objects in front of it to avoid collisions.
+- Create a depth map of the environment to plan safe and efficient paths.
