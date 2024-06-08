@@ -41,7 +41,33 @@ The Duckiebot DB21 is equipped with a Waveshare Raspberry Pi Camera Module with 
 
 1. Gathering Light and focusing it on a Sensor:
 
-    Light from the environment reflects off objects and travels towards the camera. The lens focuses this incoming light to create a sharp image on the sensor plane.
+    Light from the environment reflects off objects and travels towards the camera. 
+    The lens focuses this incoming light to create a sharp image on the sensor plane.
+
+    <div align="center">
+    <img src="images/lens_focusing.jpg" alt="Lens Focusing Light">
+    </div>
+
+2. Capturing Light with Photodetectors:
+
+    The digital sensor behind the lens is an array of millions of tiny photodetectors, typically made of CMOS (Complementary Metal-Oxide-Semiconductor) technology. 
+    Each photodetector acts like a tiny light meter, converting the captured light into an electrical signal.
+
+3. Converting Light Intensity to Digital Values:
+   
+   The strength of the electrical signal from each photodetector depends on the amount of light it receives. 
+   This translates directly to the brightness level of that specific point in the image. 
+   The camera then assigns a digital value to each signal, typically ranging from 0 (black, no light detected) to a maximum value (often 255, white, maximum light detected).
+   The color of each pixel is determined by the intensity of the red, green, and blue light detected by the sensor.
+
+4. Assembling the Image:
+
+    The camera arranges the millions of individual pixel values into a grid, creating a digital representation of the scene.
+
+    <div align="center">
+    <img src="images/assembling_an_image.png" alt="Assembling an Image">
+    </div>
+    
 
 #### Functionality
 
