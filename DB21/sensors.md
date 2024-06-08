@@ -91,7 +91,7 @@ For instance, the Duckiebot DB21 can:
 
 ---
 
-### ToF (Time-of-Flight) Sensor
+### ToF Sensor
 
 #### Description
 
@@ -130,3 +130,6 @@ For instance, the Duckiebot DB21 can:
 - Stop or change its course when an obstacle is detected within a certain range.
 - Calculate the distance to objects in front of it to avoid collisions.
 - Create a depth map of the environment to plan safe and efficient paths.
+  
+---
+

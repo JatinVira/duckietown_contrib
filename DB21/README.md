@@ -37,6 +37,18 @@ This LX is divided into several sections, each focusing on a different aspect of
 1. [Sensors](sensors.md)
 
     This section covers the various sensors equipped on the robot like cameras, ToF, IMU, wheel encoders, etc.
+
+    <div id="sensor_icons">
+    <a href="sensors.md#camera">
+        <img src="images/camera.jpg" alt="Camera" title="Camera">
+    </a>
+    <a href="sensors.md#tof-sensor">
+        <img src="images/tof.jpg" alt="ToF Sensor" title="ToF Sensor">
+    </a>
+    <a href="sensors.md#encoders">
+        <img src="images/camera.jpg" alt="Encoders" title="Encoders">
+    </a>
+    </div>
     
     We will discuss how each sensor contributes to the robot’s ability to perceive and interact with its environment.
 
