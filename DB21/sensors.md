@@ -29,7 +29,7 @@ Let's proceed to understand the various sensors equipped on the Duckiebot DB21 r
 
 #### Description
 
-The Duckiebot DB21 is equipped with a Waveshare Raspberry Pi Camera Module with a fish-eye lens, providing a wide 160-degree field of view. This high-quality camera is crucial for capturing detailed images of the robot's environment, which are then used for various computer vision tasks.
+The Duckiebot DB21 is equipped with a Waveshare Raspberry Pi Camera Module with a fish-eye lens, providing a wide 160-degree field of view.
 
 #### Picture
 
@@ -69,25 +69,24 @@ The Duckiebot DB21 is equipped with a Waveshare Raspberry Pi Camera Module with 
     </div>
     
 
-#### Functionality
-
-The camera captures images (frames) of the surrounding environment.
-These images are processed by the robot to understand its surroundings and make autonomous decisions.
-The camera enables the Duckiebot DB21 to:
-
-- Detect and follow lanes on the road
-- Identify and react to traffic signs and obstacles
-- Navigate complex environments using simultaneous localization and mapping (SLAM)
-
 #### Usage Example
 
-The continuous stream of images from the camera can be utilized for real-time navigation.
-For instance, the Duckiebot DB21 can:
+The camera captures images (frames) of the surrounding environment. 
+Each frame is a 2D array of pixel values, representing the brightness and color of each point in the image.
+We can process these frames to extract useful information about the environment.
+For example, we can obtain the following information from these frames:
 
-- Use detected lines on the road to maintain a straight path or navigate curves.
-- Apply feature detection to recognize specific patterns or objects in its environment.
-- Build control points from the visual data to plot a course and adjust its movements accordingly.
+- Region of interest to narrow down the search area
+- Grouping a cluster of pixels as edges, lines, etc.
+- Detecting patterns, shapes, and objects using these clusters
 
+Once we have this information, we can use it to make decisions and control the robot.
+For example, we can:
+
+- Detect lane markings on the road to follow a path, curve, or intersection.
+- Identify obstacles in the robot's path to avoid collisions.
+- Recognize traffic signs and signals to obey traffic rules.
+- Track objects of interest for interaction or navigation.
 
 ---
 
@@ -95,8 +94,9 @@ For instance, the Duckiebot DB21 can:
 
 #### Description
 
+ToF stands for Time-of-Flight.
 The Duckiebot DB21 is equipped with a VL53L1X ToF sensor.
-The ToF sensor gives us a depth data of the environment, which is crucial for obstacle avoidance and navigation.
+The ToF sensor gives us a depth data oin front of the robot for a diagonal field of view of 27 degrees.
 
 #### Picture
 
@@ -107,29 +107,25 @@ The ToF sensor gives us a depth data of the environment, which is crucial for ob
 #### Working Principle
 
 A Time-of-Flight (ToF) sensor works by emitting a short burst of infrared light, invisible to the human eye. 
+
 This light pulse travels outwards and bounces off objects in the environment. 
+
 The sensor then measures the time it takes for the light pulse to travel to an object and reflect back. 
+
 Based on the speed of light and the measured time, the sensor calculates the distance to the object.
-
-#### Functionality
-
-The ToF sensor provides depth information about the environment.
-This information is used for obstacle avoidance, navigation, and mapping.
-The ToF sensor enables the Duckiebot DB21 to:
-
-- Detect obstacles in its path and avoid collisions
-- Measure distances to objects for safe navigation
-- Create a 3D map of the environment for localization and path planning
-- Assist in docking maneuvers and precise positioning
 
 #### Usage Example
 
-The ToF sensor can be used to detect obstacles in the robot's path.
-For instance, the Duckiebot DB21 can:
+The robot is practically blind for distance measurement given that a Monocular Camera (Single Cam) cannot provide depth information.
+This is why we have a ToF sensor which provides depth information about the environment in front of the robot.
+This data is usually represented in a floating-point number, indicating the distance in meters from the sensor to the object.
+We can use this depth information to:
 
-- Stop or change its course when an obstacle is detected within a certain range.
-- Calculate the distance to objects in front of it to avoid collisions.
-- Create a depth map of the environment to plan safe and efficient paths.
+- Detect obstacles in the robot's path and avoid collisions.
+- Measure the distance to objects for navigation and interaction.
+- Dock the robot accurately to a charging station or a specific location.
   
 ---
+
+### IMU Sensor
 

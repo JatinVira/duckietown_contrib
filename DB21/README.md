@@ -45,6 +45,9 @@ This LX is divided into several sections, each focusing on a different aspect of
     <a href="sensors.md#tof-sensor">
         <img src="images/tof.jpg" alt="ToF Sensor" title="ToF Sensor">
     </a>
+    <a href="sensors.md#imu">
+        <img src="images/imu.jpg" alt="IMU" title="IMU">
+    </a>
     <a href="sensors.md#encoders">
         <img src="images/camera.jpg" alt="Encoders" title="Encoders">
     </a>
