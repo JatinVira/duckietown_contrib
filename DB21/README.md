@@ -69,7 +69,13 @@ This LX is divided into several sections, each focusing on a different aspect of
 
 3. [Computing](computing.md)
 
-    This section covers the computing unit equipped on the robot like the Raspberry Pi, Jetson Nano, etc.
+    This section covers the computing unit equipped on the robot like the Jetson Nano, etc.
+
+    <div id="computing_icons">
+    <a href="computing.md#jetson-nano">
+        <img src="images/jetson_nano.jpg" alt="Jetson Nano" title="Jetson Nano">
+    </a>
+    </div>
     
     The computing unit is the brain of the robot and is responsible for processing sensor data, making decisions, executing control algorithms, moving the actuators, etc.
 
