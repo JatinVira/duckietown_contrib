@@ -38,7 +38,7 @@ This LX is divided into several sections, each focusing on a different aspect of
 
     This section covers the various sensors equipped on the robot like cameras, ToF, IMU, wheel encoders, etc.
 
-    <div id="sensor_icons">
+    <div id="sensor_icons" align="center">
     <a href="sensors.md#camera">
         <img src="images/camera.jpg" alt="Camera" title="Camera">
     </a>
@@ -59,7 +59,7 @@ This LX is divided into several sections, each focusing on a different aspect of
 
     This section covers the different actuators equipped on the robot like motors.
 
-    <div id="actuator_icons">
+    <div id="actuator_icons" align="center">
     <a href="actuators.md#motors">
         <img src="images/motor.jpg" alt="Motor" title="Motor">
     </a>
@@ -71,7 +71,7 @@ This LX is divided into several sections, each focusing on a different aspect of
 
     This section covers the computing unit equipped on the robot like the Jetson Nano, etc.
 
-    <div id="computing_icons">
+    <div id="computing_icons" align="center">
     <a href="computing.md#jetson-nano">
         <img src="images/jetson_nano.jpg" alt="Jetson Nano" title="Jetson Nano">
     </a>
@@ -82,6 +82,12 @@ This LX is divided into several sections, each focusing on a different aspect of
 4. [Power](power.md)
 
     This section covers the power system equipped on the robot like batteries, power management components, etc.
+
+    <div id="power_icons" align="center">
+    <a href="power.md#duckiebattery">
+        <img src="images/duckiebattery.jpg" alt="DuckieBattery" title="DuckieBattery">
+    </a>
+    </div>
     
     We will discuss the Smart Duckiebattery, its capacity, and how it supports the robot’s energy needs.
 
