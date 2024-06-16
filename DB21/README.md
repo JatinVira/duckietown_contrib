@@ -57,7 +57,13 @@ This LX is divided into several sections, each focusing on a different aspect of
 
 2. [Actuators](actuators.md)
 
-    This section covers the different actuators equipped on the robot like motors, wheels, etc.
+    This section covers the different actuators equipped on the robot like motors.
+
+    <div id="actuator_icons">
+    <a href="actuators.md#motors">
+        <img src="images/motor.jpg" alt="Motor" title="Motor">
+    </a>
+    </div>
     
     These actuators are responsible for the robot’s movement and interaction with the environment.
 
