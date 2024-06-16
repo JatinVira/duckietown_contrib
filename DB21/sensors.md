@@ -127,5 +127,82 @@ We can use this depth information to:
   
 ---
 
-### IMU Sensor
+### IMU
+
+#### Description
+
+IMU stands for Inertial Measurement Unit.
+The Duckiebot DB21 is equipped with an MPU-6050 IMU sensor.
+The IMU sensor provides us with data on the robot's orientation, acceleration, and angular velocity across three axes.
+
+#### Picture
+
+<div align="center">
+<img src="images/imu.png" alt="IMU Sensor Picture">
+</div>
+
+#### Working Principle
+
+An Inertial Measurement Unit (IMU) sensor combines accelerometers and gyroscopes to measure linear acceleration and angular velocity, respectively. 
+
+Accelerometers detect changes in velocity, providing information about movement in space. 
+
+Gyroscopes measure the rate of rotation around the robot's axes. 
+
+Together, these measurements enable the IMU to determine the robot's orientation, movement, and position relative to its starting point.
+
+#### Usage Example
+
+Since an IMU provides information about the robot's orientation, acceleration, and angular velocity, we can use this data for various purposes, such as:
+
+- Keeping track of the robot's movement and position in real-time, which is crucial for navigation.
+- Stabilizing the robot to maintain a steady course or orientation, even on uneven surfaces.
+- Assisting with complex maneuvers, such as turning accurately and maintaining balance during sharp movements.
+- Perform precise movements, such as rotating to a specific angle or following a predefined trajectory.
+- Integrate with other sensors to provide a comprehensive understanding of the robot's environment and actions.
+- Detect and compensate for external disturbances, such as vibrations, shocks, or sudden changes in direction.
+
+---
+
+### Encoder
+
+#### Description
+
+Encoders are devices that convert mechanical motion into electrical signals.
+The Duckiebot DB21 is equipped with wheel encoders.
+These encoders provide data on the rotational position and speed of the robot's wheels, enabling precise measurement of distance traveled.
+
+#### Picture
+
+<div align="center">
+<img src="images/encoder.jpg" alt="Encoder Picture">
+</div>
+
+#### Working Principle
+
+Wheel encoders function by using a rotating disk with a pattern of lines or slots and a sensor that detects these patterns as the disk spins. 
+
+As the wheels of the robot turn, the encoder disk rotates, and the sensor counts the number of lines or slots that pass by. 
+
+Using simple math we can then translate these counts into the wheel's rotational position and speed, allowing the system to calculate the distance traveled and the speed of the robot.
+
+<div align="center">
+<img src="images/encoder_working_principle.jpg" alt="Encoder Working Principle">
+</div>
+
+#### Usage Example
+
+Encoders are essential for precise navigation and control of the Duckiebot. They provide the following benefits:
+
+- Measuring the distance the robot has traveled by counting the number of wheel rotations.
+- Calculating the speed of the robot, which is crucial for maintaining consistent and controlled motion.
+- Enabling accurate control of the robot's movements, such as stopping at a specific point or maintaining a steady speed.
+
+With the encoder data, we can improve the Duckiebot's capabilities in various ways:
+
+- Implementing odometry to track the robot's position over time, which is vital for navigation and path planning.
+- Ensuring precise movement and stopping distances, which is important for tasks like docking and obstacle avoidance.
+- Integrating with other sensors to provide comprehensive data for more advanced control algorithms.
+
+---
 
