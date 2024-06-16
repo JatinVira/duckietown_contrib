@@ -114,6 +114,10 @@ The sensor then measures the time it takes for the light pulse to travel to an o
 
 Based on the speed of light and the measured time, the sensor calculates the distance to the object.
 
+<div align="center">
+<img src="images/tof_working_principle.png" alt="ToF Sensor Working Principle">
+</div>
+
 #### Usage Example
 
 The robot is practically blind for distance measurement given that a Monocular Camera (Single Cam) cannot provide depth information.
@@ -150,6 +154,11 @@ Accelerometers detect changes in velocity, providing information about movement 
 Gyroscopes measure the rate of rotation around the robot's axes. 
 
 Together, these measurements enable the IMU to determine the robot's orientation, movement, and position relative to its starting point.
+
+<div align="center">
+<img src="images/imu_working_principle.gif" alt="IMU Working Principle">
+<img src="images/imu_working_principle.png" alt="IMU Working Principle-A">
+</div>
 
 #### Usage Example
 
