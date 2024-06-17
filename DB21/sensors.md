@@ -94,9 +94,9 @@ For example, we can:
 
 #### Description
 
-ToF stands for Time-of-Flight.
+The term ToF stands for Time-of-Flight.
 The Duckiebot DB21 is equipped with a VL53L1X ToF sensor.
-The ToF sensor gives us a depth data oin front of the robot for a diagonal field of view of 27 degrees.
+The ToF sensor gives us a depth data in front of the robot for a diagonal field of view of 27 degrees.
 
 #### Picture
 
@@ -106,17 +106,27 @@ The ToF sensor gives us a depth data oin front of the robot for a diagonal field
 
 #### Working Principle
 
-A Time-of-Flight (ToF) sensor works by emitting a short burst of infrared light, invisible to the human eye. 
+1. Emitting and Receiving Light:
+   
+    The sensor works by emitting a short burst of infrared light, invisible to the human eye.
+    The spectrum of emitted light is carefully chosen to avoid interference from ambient light sources.
+    The emitted light travels through the air and reflects off objects in the environment.
+    
+2. Indirect Measurement of Distance:
+   
+    Since the speed of light is extremely fast, the sensor would have a hard time measuring the time it takes for the light to travel to the object and back (time could be in nanoseconds). 
+    Instead, the sensor measures the time it takes for the light to travel to the object and back by comparing the phase of the emitted light with the phase of the received light.
+    This phase shift is directly proportional to the distance between the sensor and the object.
 
-This light pulse travels outwards and bounces off objects in the environment. 
+    <div align="center">
+    <img src="images/tof_working_principle.png" alt="ToF Sensor Working Principle">
+    </div
 
-The sensor then measures the time it takes for the light pulse to travel to an object and reflect back. 
+3. Obtaining Distance Data:
 
-Based on the speed of light and the measured time, the sensor calculates the distance to the object.
+    The sensor uses the phase shift to calculate the distance to the object based on the speed of light.
+    The distance is then converted into a digital value, typically in millimeters or centimeters, and sent as a sensor reading.
 
-<div align="center">
-<img src="images/tof_working_principle.png" alt="ToF Sensor Working Principle">
-</div>
 
 #### Usage Example
 
@@ -147,18 +157,33 @@ The IMU sensor provides us with data on the robot's orientation, acceleration, a
 
 #### Working Principle
 
-An Inertial Measurement Unit (IMU) sensor combines accelerometers and gyroscopes to measure linear acceleration and angular velocity, respectively. 
+An Inertial Measurement Unit (IMU) sensor combines accelerometers, gyroscopes and sometimes magnetometers to provide information about the robot's motion and orientation.
 
-Accelerometers detect changes in velocity, providing information about movement in space. 
-
-Gyroscopes measure the rate of rotation around the robot's axes. 
-
-Together, these measurements enable the IMU to determine the robot's orientation, movement, and position relative to its starting point.
+##### Accelerometer:
+An accelerometer measures the acceleration forces acting on it, which can be due to gravity or movement. 
+It consists of tiny mass-spring systems that deflect under acceleration, causing a change in capacitance or resistance that is measured and converted into an electrical signal. 
+This signal is then used to calculate the acceleration in specific directions, helping determine linear movement and orientation relative to the ground.
 
 <div align="center">
-<img src="images/imu_working_principle.gif" alt="IMU Working Principle">
-<img src="images/imu_working_principle.png" alt="IMU Working Principle-A">
+<img src="images/accl_working_principle.gif" alt="Accelorometer Working Principle">
 </div>
+
+##### Gyroscope:
+A gyroscope measures the rate of rotation around an axis, providing information about the angular velocity. 
+It often uses the Coriolis effect in vibrating structures, where the rotation causes a detectable shift in vibration patterns. This shift is measured and translated into rotational data, which can be integrated over time to track the orientation of the device.
+
+<div align="center">
+<img src="images/gyro_working_principle.png" alt="Gyroscope Working Principle">
+</div>
+
+##### Magnetometer:
+A magnetometer measures the strength and direction of magnetic fields, including the Earth's magnetic field. It uses sensors like Hall-effect sensors or magnetoresistive sensors to detect magnetic flux changes. This data is used to determine the device's heading or orientation relative to the Earth's magnetic poles, often aiding in navigation and correcting drift in other sensors.
+
+<div align="center">
+<img src="images/magneto_working_principle.png" alt="Magnetometer Working Principle">
+</div
+
+Together, these measurements enable the IMU to determine the robot's orientation, movement, and position relative to its starting point.
 
 #### Usage Example
 
@@ -189,14 +214,32 @@ These encoders provide data on the rotational position and speed of the robot's 
 
 #### Working Principle
 
-Wheel encoders function by using a rotating disk with a pattern of lines or slots and a sensor that detects these patterns as the disk spins. 
+Wheel encoders measure the rotation of a wheel or axle to provide information about position, speed, and direction. They convert rotational position into an electrical signal, which is then processed to extract the desired information.
 
-As the wheels of the robot turn, the encoder disk rotates, and the sensor counts the number of lines or slots that pass by. 
+##### Incremental and Absolute Encoders:
 
-Using simple math we can then translate these counts into the wheel's rotational position and speed, allowing the system to calculate the distance traveled and the speed of the robot.
+Incremental encoders generate a series of pulses corresponding to fixed rotation amounts, allowing for distance and speed calculations, but they require a reference point for absolute positioning. 
+
+Absolute encoders, on the other hand, provide a unique position value for each rotational point, offering precise position data from the start without needing a reference.
 
 <div align="center">
-<img src="images/encoder_working_principle.jpg" alt="Encoder Working Principle">
+<img src="images/inc_vs_optical.png"  alt="Incremental vs Absolute Encoders">
+</div>
+
+##### Optical Encoders:
+
+Optical encoders use an LED light source and a photodetector to read transparent and opaque segments on a rotating disc. The resulting light and dark patterns are converted into electrical signals, offering high precision and resolution.
+
+<div align="center">
+<img src="images/optical_enc.jpg" alt="Optical Encoder">
+</div>
+
+##### Magnetic Encoders:
+
+Magnetic encoders utilize a magnetic disc and a sensor to detect changes in the magnetic field as the disc rotates. These changes are converted into electrical signals, making magnetic encoders robust and suitable for harsh environments, though they may offer slightly less precision compared to optical encoders.
+
+<div align="center">
+<img src="images/magnetic_enc.jpg" alt="Magnetic Encoder">
 </div>
 
 #### Usage Example
