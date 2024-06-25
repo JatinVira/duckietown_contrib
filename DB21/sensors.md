@@ -6,30 +6,31 @@
 
 ## Sensors - Introduction
 
-What are Sensors? And why do we need them?
+What are sensors?  
+And why do we need them?
 
-Sensors are devices that detect and respond to some type of input from the physical environment.
+Sensors are devices that detect and respond to some type of input from the physical environment.  
 They convert the physical quantity into an electrical signal that can be read by an observer or by an instrument.
 
-In the context of robotics, sensors are used to perceive the environment and provide feedback to the robot.
+In the context of robotics, sensors are used to perceive the environment and provide feedback to the robot.  
 They help the robot to understand its surroundings, make decisions, and interact with the environment.
 
-Let's take a simple example from our real world.
-Imagine that you are walking in a dark room and you want to find the light switch.
-You use your sense of touch to feel the wall and find the switch.
+Let's take a simple example from our real world.  
+Imagine that you are walking in a dark room and you want to find the light switch.  
+You use your sense of touch to feel the wall and find the switch.  
 In this example, your sense of touch is acting as a sensor that helps you to perceive the environment and interact with it.
 
-Let's proceed to understand the various sensors equipped on the Duckiebot DB21 robot.
+Let's proceed to understand the various sensors equipped on the Duckiebot DB21J robot.
 
 ---
 
-## Sensors on Duckiebot DB21
+## Sensors on Duckiebot DB21J
 
 ### Camera
 
 #### Description
 
-The Duckiebot DB21 is equipped with a Waveshare Raspberry Pi Camera Module with a fish-eye lens, providing a wide 160-degree field of view.
+The Duckiebot DB21J is equipped with a Waveshare Raspberry Pi Camera Module with a fish-eye lens, providing a wide 160-degree field of view.
 
 #### Picture
 
@@ -50,14 +51,14 @@ The Duckiebot DB21 is equipped with a Waveshare Raspberry Pi Camera Module with 
 
 2. Capturing Light with Photodetectors:
 
-    The digital sensor behind the lens is an array of millions of tiny photodetectors, typically made of CMOS (Complementary Metal-Oxide-Semiconductor) technology. 
+    The digital sensor behind the lens is an array of millions of tiny photodetectors, typically made of CMOS (Complementary Metal-Oxide-Semiconductor) technology.  
     Each photodetector acts like a tiny light meter, converting the captured light into an electrical signal.
 
 3. Converting Light Intensity to Digital Values:
    
-   The strength of the electrical signal from each photodetector depends on the amount of light it receives. 
-   This translates directly to the brightness level of that specific point in the image. 
-   The camera then assigns a digital value to each signal, typically ranging from 0 (black, no light detected) to a maximum value (often 255, white, maximum light detected).
+   The strength of the electrical signal from each photodetector depends on the amount of light it receives.  
+   This translates directly to the brightness level of that specific point in the image.  
+   The camera then assigns a digital value to each signal, typically ranging from 0 (black, no light detected) to a maximum value (often 255, white, maximum light detected).  
    The color of each pixel is determined by the intensity of the red, green, and blue light detected by the sensor.
 
 4. Assembling the Image:
@@ -94,8 +95,8 @@ For example, we can:
 
 #### Description
 
-The term ToF stands for Time-of-Flight.
-The Duckiebot DB21 is equipped with a VL53L1X ToF sensor.
+The term ToF stands for Time-of-Flight.  
+The Duckiebot DB21J is equipped with a VL53L1X ToF sensor.  
 The ToF sensor gives us a depth data in front of the robot for a diagonal field of view of 27 degrees.
 
 #### Picture
@@ -108,14 +109,14 @@ The ToF sensor gives us a depth data in front of the robot for a diagonal field 
 
 1. Emitting and Receiving Light:
    
-    The sensor works by emitting a short burst of infrared light, invisible to the human eye.
-    The spectrum of emitted light is carefully chosen to avoid interference from ambient light sources.
+    The sensor works by emitting a short burst of infrared light, invisible to the human eye.  
+    The spectrum of emitted light is carefully chosen to avoid interference from ambient light sources.  
     The emitted light travels through the air and reflects off objects in the environment.
     
 2. Indirect Measurement of Distance:
    
-    Since the speed of light is extremely fast, the sensor would have a hard time measuring the time it takes for the light to travel to the object and back (time could be in nanoseconds). 
-    Instead, the sensor measures the time it takes for the light to travel to the object and back by comparing the phase of the emitted light with the phase of the received light.
+    Since the speed of light is extremely fast, the sensor would have a hard time measuring the time it takes for the light to travel to the object and back (time could be in nanoseconds).   
+    Instead, the sensor measures the time it takes for the light to travel to the object and back by comparing the phase of the emitted light with the phase of the received light.  
     This phase shift is directly proportional to the distance between the sensor and the object.
 
     <div align="center">
@@ -124,13 +125,13 @@ The ToF sensor gives us a depth data in front of the robot for a diagonal field 
 
 3. Obtaining Distance Data:
 
-    The sensor uses the phase shift to calculate the distance to the object based on the speed of light.
+    The sensor uses the phase shift to calculate the distance to the object based on the speed of light.  
     The distance is then converted into a digital value, typically in millimeters or centimeters, and sent as a sensor reading.
 
 
 #### Usage Example
 
-The robot is practically blind for distance measurement given that a Monocular Camera (Single Cam) cannot provide depth information.
+The robot is practically blind for distance measurement given that a Monocular Camera (single camera) cannot provide depth information.
 This is why we have a ToF sensor which provides depth information about the environment in front of the robot.
 This data is usually represented in a floating-point number, indicating the distance in meters from the sensor to the object.
 We can use this depth information to:
@@ -145,8 +146,8 @@ We can use this depth information to:
 
 #### Description
 
-IMU stands for Inertial Measurement Unit.
-The Duckiebot DB21 is equipped with an MPU-6050 IMU sensor.
+IMU stands for Inertial Measurement Unit.  
+The Duckiebot DB21J is equipped with an MPU-6050 IMU sensor.  
 The IMU sensor provides us with data on the robot's orientation, acceleration, and angular velocity across three axes.
 
 #### Picture
@@ -160,8 +161,8 @@ The IMU sensor provides us with data on the robot's orientation, acceleration, a
 An Inertial Measurement Unit (IMU) sensor combines accelerometers, gyroscopes and sometimes magnetometers to provide information about the robot's motion and orientation.
 
 ##### Accelerometer:
-An accelerometer measures the acceleration forces acting on it, which can be due to gravity or movement. 
-It consists of tiny mass-spring systems that deflect under acceleration, causing a change in capacitance or resistance that is measured and converted into an electrical signal. 
+An accelerometer measures the acceleration forces acting on it, which can be due to gravity or movement.  
+It consists of tiny mass-spring systems that deflect under acceleration, causing a change in capacitance or resistance that is measured and converted into an electrical signal.  
 This signal is then used to calculate the acceleration in specific directions, helping determine linear movement and orientation relative to the ground.
 
 <div align="center">
@@ -169,15 +170,18 @@ This signal is then used to calculate the acceleration in specific directions, h
 </div>
 
 ##### Gyroscope:
-A gyroscope measures the rate of rotation around an axis, providing information about the angular velocity. 
-It often uses the Coriolis effect in vibrating structures, where the rotation causes a detectable shift in vibration patterns. This shift is measured and translated into rotational data, which can be integrated over time to track the orientation of the device.
+A gyroscope measures the rate of rotation around an axis, providing information about the angular velocity.  
+It often uses the Coriolis effect in vibrating structures, where the rotation causes a detectable shift in vibration patterns.  
+This shift is measured and translated into rotational data, which can be integrated over time to track the orientation of the device.
 
 <div align="center">
 <img src="images/gyro_working_principle.png" alt="Gyroscope Working Principle">
 </div>
 
 ##### Magnetometer:
-A magnetometer measures the strength and direction of magnetic fields, including the Earth's magnetic field. It uses sensors like Hall-effect sensors or magnetoresistive sensors to detect magnetic flux changes. This data is used to determine the device's heading or orientation relative to the Earth's magnetic poles, often aiding in navigation and correcting drift in other sensors.
+A magnetometer measures the strength and direction of magnetic fields, including the Earth's magnetic field.  
+It uses sensors like Hall-effect sensors or magnetoresistive sensors to detect magnetic flux changes.  
+This data is used to determine the device's heading or orientation relative to the Earth's magnetic poles, often aiding in navigation and correcting drift in other sensors.
 
 <div align="center">
 <img src="images/magneto_working_principle.png" alt="Magnetometer Working Principle">
@@ -202,8 +206,8 @@ Since an IMU provides information about the robot's orientation, acceleration, a
 
 #### Description
 
-Encoders are devices that convert mechanical motion into electrical signals.
-The Duckiebot DB21 is equipped with wheel encoders.
+Encoders are devices that convert mechanical motion into electrical signals.  
+The Duckiebot DB21J is equipped with wheel encoders.  
 These encoders provide data on the rotational position and speed of the robot's wheels, enabling precise measurement of distance traveled.
 
 #### Picture
@@ -214,7 +218,8 @@ These encoders provide data on the rotational position and speed of the robot's 
 
 #### Working Principle
 
-Wheel encoders measure the rotation of a wheel or axle to provide information about position, speed, and direction. They convert rotational position into an electrical signal, which is then processed to extract the desired information.
+Wheel encoders measure the rotation of a wheel or axle to provide information about position, speed, and direction.  
+They convert rotational position into an electrical signal, which is then processed to extract the desired information.
 
 ##### Incremental and Absolute Encoders:
 
@@ -228,7 +233,8 @@ Absolute encoders, on the other hand, provide a unique position value for each r
 
 ##### Optical Encoders:
 
-Optical encoders use an LED light source and a photodetector to read transparent and opaque segments on a rotating disc. The resulting light and dark patterns are converted into electrical signals, offering high precision and resolution.
+Optical encoders use an LED light source and a photodetector to read transparent and opaque segments on a rotating disc.  
+The resulting light and dark patterns are converted into electrical signals, offering high precision and resolution.
 
 <div align="center">
 <img src="images/optical_enc.jpg" alt="Optical Encoder">
@@ -236,7 +242,8 @@ Optical encoders use an LED light source and a photodetector to read transparent
 
 ##### Magnetic Encoders:
 
-Magnetic encoders utilize a magnetic disc and a sensor to detect changes in the magnetic field as the disc rotates. These changes are converted into electrical signals, making magnetic encoders robust and suitable for harsh environments, though they may offer slightly less precision compared to optical encoders.
+Magnetic encoders utilize a magnetic disc and a sensor to detect changes in the magnetic field as the disc rotates.  
+These changes are converted into electrical signals, making magnetic encoders robust and suitable for harsh environments, though they may offer slightly less precision compared to optical encoders.
 
 <div align="center">
 <img src="images/magnetic_enc.jpg" alt="Magnetic Encoder">
@@ -244,7 +251,8 @@ Magnetic encoders utilize a magnetic disc and a sensor to detect changes in the 
 
 #### Usage Example
 
-Encoders are essential for precise navigation and control of the Duckiebot. They provide the following benefits:
+Encoders are essential for precise navigation and control of the Duckiebot.  
+They provide the following benefits:
 
 - Measuring the distance the robot has traveled by counting the number of wheel rotations.
 - Calculating the speed of the robot, which is crucial for maintaining consistent and controlled motion.

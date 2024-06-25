@@ -21,18 +21,18 @@ In this scenario, your hands are receiving signals from your brain and convertin
 
 Actuators are essential for a robot's functionality, enabling it to perform tasks such as moving, lifting, rotating, and gripping objects. They allow the robot to interact dynamically with its environment and execute the tasks it was designed for.
 
-Let's proceed to understand the various actuators equipped on the Duckiebot DB21 robot.
+Let's proceed to understand the various actuators equipped on the Duckiebot DB21J robot.
 
 ---
 
-## Actuators on Duckiebot DB21
+## Actuators on Duckiebot DB21J
 
 ### Motors
 
 #### Description
 
 Motors are devices that convert electrical energy into mechanical motion.
-The Duckiebot DB21 is equipped with DC motors.
+The Duckiebot DB21J is equipped with DC motors.
 These motors drive the wheels of the robot, allowing it to move forward, backward, and turn.
 
 #### Picture

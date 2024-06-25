@@ -1,4 +1,4 @@
-# Learning Experience - Getting started with Duckiebot DB21
+# Learning Experience - Getting started with Duckiebot DB21J
 
 ---
 
@@ -6,25 +6,25 @@
 
 Welcome to your very first Learning Experience!
 
-This readme will guide you through the essential components and incredible capabilities of the Duckiebot DB21 robot from Duckietown.
-The Duckiebot DB21 is a versatile educational robot that offers a hands-on adventure into robotics, autonomous driving, and artificial intelligence.
+This readme will guide you through the essential components and incredible capabilities of the Duckiebot DB21J robot from Duckietown.
+The Duckiebot DB21J is a versatile educational robot that offers a hands-on adventure into robotics, autonomous driving, and artificial intelligence.
 
 The robot comes equipped with an array of amazing sensors, capable actuators, a powerful and smart computing unit, and a robust power system, all of which work together to enable the robot to perform complex tasks such as navigation, obstacle avoidance, and path planning.
 
 <div align="center">
-<img src="images/DB21J4_turning.webp" alt="Rotating Duckiebot DB21">
+<img src="images/DB21J4_turning.webp" alt="Rotating Duckiebot DB21J">
 </div>
 
 ---
 
 ## Learning Outcomes
 
-The goal of this Learning Experience is to get started and understand your Duckiebot DB21 robot.
+The goal of this Learning Experience is to get started and help you understand your Duckiebot DB21J robot.
 By the end of this Learning Experience, you will be able to:
 
-1. Understand the breakdown of the Duckiebot DB21 robot into different sections.
+1. Understand the breakdown of the Duckiebot DB21J robot into different sections.
 2. Understand the purpose and functionality of each section.
-3. Be able to identify and locate the different components of the Duckiebot DB21 robot.
+3. Be able to identify and locate the different components of the Duckiebot DB21J robot.
 4. Understand the basic working principles of these components.
 5. Understand how these components work together to enable the robot to perform complex tasks.
 
@@ -32,7 +32,7 @@ By the end of this Learning Experience, you will be able to:
 
 ## Breakdown of Sections
 
-This LX is divided into several sections, each focusing on a different aspect of the Duckiebot DB21 robot to facilatate the better understanding of the purpose and functionality of each section.
+This LX is divided into several sections, each focusing on a different aspect of the Duckiebot DB21J robot to facilatate the better understanding of the purpose and functionality of each section.
 
 1. [Sensors](sensors.md)
 
@@ -57,7 +57,7 @@ This LX is divided into several sections, each focusing on a different aspect of
 
 2. [Actuators](actuators.md)
 
-    This section covers the different actuators equipped on the robot like motors.
+    This section covers the different actuators equipped on the robot like motors, LED's and an OLED display.
 
     <div id="actuator_icons" align="center">
     <a href="actuators.md#motors">
@@ -69,7 +69,7 @@ This LX is divided into several sections, each focusing on a different aspect of
 
 3. [Computing](computing.md)
 
-    This section covers the computing unit equipped on the robot like the Jetson Nano, etc.
+    This section covers the computing unit equipped on the robot like the Jetson Nano and the Duckiehut.
 
     <div id="computing_icons" align="center">
     <a href="computing.md#jetson-nano">

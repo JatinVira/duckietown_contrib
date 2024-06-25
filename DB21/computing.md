@@ -24,7 +24,7 @@ In this scenario, your brain acts as the computing unit that integrates all the 
 
 In robotics, computing systems perform similar functions, enabling the robot to understand its environment, make decisions, and interact with its surroundings.
 
-Let's proceed to understand the computing components equipped on the Duckiebot DB21 robot.
+Let's proceed to understand the computing components equipped on the Duckiebot DB21J robot.
 
 ---
 
@@ -33,7 +33,7 @@ Let's proceed to understand the computing components equipped on the Duckiebot D
 #### Description
 
 The Jetson Nano is a powerful computing module designed by NVIDIA, specifically for AI and robotics applications.
-The Duckiebot DB21 is equipped with a Jetson Nano, providing it with the computational power required for advanced tasks.
+The Duckiebot DB21J is equipped with a Jetson Nano, providing it with the computational power required for advanced tasks.
 
 #### Picture
 

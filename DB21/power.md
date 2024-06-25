@@ -22,7 +22,7 @@ Imagine you are using a smartphone. Your phone's battery supplies the power need
 
 In robotics, power systems play a crucial role in ensuring that the robot can perform its tasks efficiently and reliably.
 
-Let's proceed to understand the power components equipped on the Duckiebot DB21 robot.
+Let's proceed to understand the power components equipped on the Duckiebot DB21J robot.
 
 ---
 
@@ -30,7 +30,7 @@ Let's proceed to understand the power components equipped on the Duckiebot DB21 
 
 #### Description
 
-The DuckieBattery is a custom-designed battery pack that powers the Duckiebot DB21.
+The DuckieBattery is a custom-designed battery pack that powers the Duckiebot DB21J.
 It provides the necessary energy to operate the robot's motors, sensors, and computing unit.
 
 #### Picture
