@@ -57,11 +57,17 @@ This LX is divided into several sections, each focusing on a different aspect of
 
 2. [Actuators](actuators.md)
 
-    This section covers the different actuators equipped on the robot like motors, LED's and an OLED display.
+    This section covers the different actuators equipped on the robot like motors, RGB LED's and an OLED display.
 
     <div id="actuator_icons" align="center">
     <a href="actuators.md#motors">
         <img src="images/motor.jpg" alt="Motor" title="Motor">
+    </a>
+    <a href="actuators.md#leds">
+        <img src="images/leds.jpg" alt="RGB LED's" title="RGB LED's">
+    </a>
+    <a href="actuators.md#oled-display">
+        <img src="images/oled.jpg" alt="OLED Display" title="OLED Display">
     </a>
     </div>
     
@@ -75,6 +81,8 @@ This LX is divided into several sections, each focusing on a different aspect of
     <a href="computing.md#jetson-nano">
         <img src="images/jetson_nano.jpg" alt="Jetson Nano" title="Jetson Nano">
     </a>
+    <a href="computing.md#duckiehut">
+        <img src="images/duckiehut.png" alt="Duckiehut" title="Duckiehut">
     </div>
     
     The computing unit is the brain of the robot and is responsible for processing sensor data, making decisions, executing control algorithms, moving the actuators, etc.
