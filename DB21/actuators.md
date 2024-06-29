@@ -111,6 +111,43 @@ For example, the RGB LED's on the Duckiebot can be programmed to:
 - Display different colors based on the robot's mode of operation (e.g., autonomous mode, manual mode, calibration mode).
 - Use different strobing patterns to signal the robot's intention or action (e.g., stopping, turning, following a trajectory).
 
+---
+
+### OLED Display
+
+#### Description
+
+An OLED (Organic Light Emitting Diode) display is a type of display technology that uses organic compounds to emit light when an electric current is applied.
+
+The Duckiebot DB21J is equipped with an OLED display that can show text, graphics, and animations.
+
+#### Picture
+
+<div align="center">
+<img src="images/oled.jpg" alt="OLED Display">
+</div>
+
+#### Working Principle
+
+The working principle of an OLED display is based on the electroluminescent properties of organic materials.
+When a voltage is applied to the organic layers of the display, light is emitted as a result of the recombination of electrons and holes. Do this for each pixel and you get a display.
+
+OLED displays have several advantages over traditional LCD displays, including:
+
+- Better contrast and color reproduction.
+- Lower power consumption.
+- Wider viewing angles.
+
+#### Usage Example
+
+Again we can use the onbaord display on the duckiebot as an actuator, because it can be controlled to display different information based on the robot's state or behavior. Some examples include:
+
+- Show system information such as battery level, network status, and software version.
+- Create a GUI for user interaction, allowing users to input commands or configure settings.
+- Display animations or visual feedback to indicate the robot's actions or responses.
+
+---
+
 [Back to Index](README.md) | [Next: Computing](computing.md)
 
 ---
