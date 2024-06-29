@@ -111,6 +111,8 @@ For example, the RGB LED's on the Duckiebot can be programmed to:
 - Display different colors based on the robot's mode of operation (e.g., autonomous mode, manual mode, calibration mode).
 - Use different strobing patterns to signal the robot's intention or action (e.g., stopping, turning, following a trajectory).
 
+[Back to Index](README.md) | [Next: Computing](computing.md)
+
 ---
 
 

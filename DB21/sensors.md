@@ -264,5 +264,7 @@ With the encoder data, we can improve the Duckiebot's capabilities in various wa
 - Ensuring precise movement and stopping distances, which is important for tasks like docking and obstacle avoidance.
 - Integrating with other sensors to provide comprehensive data for more advanced control algorithms.
 
+[Back to Index](README.md) | [Next: Actuators](actuators.md)
+
 ---
 

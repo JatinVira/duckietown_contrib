@@ -63,4 +63,6 @@ With the Jetson Nano, we can leverage advanced computing techniques to:
 - Execute complex algorithms for autonomous driving and task execution.
 - Integrate with other systems for comprehensive data processing and decision-making.
 
+[Back to Index](README.md) | [Next: Power](power.md)
+
 ---
