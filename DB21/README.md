@@ -32,7 +32,7 @@ By the end of this Learning Experience, you will be able to:
 
 ## Breakdown of Sections
 
-This LX is divided into several sections, each focusing on a different aspect of the Duckiebot DB21J robot to facilatate the better understanding of the purpose and functionality of each section.
+This LX is divided into several sections, each focusing on a different aspect of the Duckiebot DB21J robot to facilitate the better understanding of the purpose and functionality of each section.
 
 1. [Sensors](sensors.md)
 

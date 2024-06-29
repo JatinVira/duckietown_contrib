@@ -166,7 +166,7 @@ It consists of tiny mass-spring systems that deflect under acceleration, causing
 This signal is then used to calculate the acceleration in specific directions, helping determine linear movement and orientation relative to the ground.
 
 <div align="center">
-<img src="images/accl_working_principle.gif" alt="Accelorometer Working Principle">
+<img src="images/accl_working_principle.gif" alt="Accelerometer Working Principle">
 </div>
 
 ##### Gyroscope:

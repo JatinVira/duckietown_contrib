@@ -140,7 +140,7 @@ OLED displays have several advantages over traditional LCD displays, including:
 
 #### Usage Example
 
-Again we can use the onbaord display on the duckiebot as an actuator, because it can be controlled to display different information based on the robot's state or behavior. Some examples include:
+Again we can use the onboard display on the duckiebot as an actuator, because it can be controlled to display different information based on the robot's state or behavior. Some examples include:
 
 - Show system information such as battery level, network status, and software version.
 - Create a GUI for user interaction, allowing users to input commands or configure settings.
