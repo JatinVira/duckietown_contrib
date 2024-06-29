@@ -83,6 +83,7 @@ This LX is divided into several sections, each focusing on a different aspect of
     </a>
     <a href="computing.md#duckiehut">
         <img src="images/duckiehut.png" alt="Duckiehut" title="Duckiehut">
+    </a>
     </div>
     
     The computing unit is the brain of the robot and is responsible for processing sensor data, making decisions, executing control algorithms, moving the actuators, etc.
